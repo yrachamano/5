@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  --darkGrey: #161616;
+  --lightGrey: #CCC;
+  color: var(--darkGrey);
+  scroll-behavior: smooth;
+}
+main{
+  max-width: 940px;
+  margin: auto;
+}
+  
+body{
+  background-color: var(--lightGrey);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#cima{
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  background-color: var(--darkGrey);
+  justify-content: space-around;
+  display: flex;
+  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+#logo {
+  height: 90%;
+  position: relative;
+  top: 5px;
+}
+
+nav {
+  width: 600px;
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--lightGrey);
+  font-weight: 500;
+  margin: 15px;
+  transition: 300ms;
+}nav a:hover {
+  font-weight: 800;
+} nav a:not(:hover){
+  opacity: 0.5;
+} 
+.banner {
+  width: 100%;
+  max-width: 900px;
+  max-height: 400px;
+  object-fit: cover;
+  margin: auto;
+}
+.utensilios{
+  width: 250px;
+  margin: 0 30px 15px 5%;
+  border-radius: 5px;
+  float: left;
+}
+#about {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.title {
+  font-weight: 800em;
+  margin: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  clear: both;
+}
+#about > p {
+  margin: 20px auto;
+  text-align: left;
+}
+#benefits {
+  margin: auto;
+  padding: 25px 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+  align-items: center;
+}
+#benefits img {
+  width: 350px;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5) );
+}
+#benefits .list {
+  justify-items: center;
+  margin: 15px;
+  width: 250px;
+  font-weight: 600;
+}
+#vidContainer{
+  padding-bottom: 56.25%;
+  position: relative;
+  margin: 30px;
+}
+#vidContainer iframe{
+  position: absolute;
+  left: 0;
+  border-radius: 5px;
+}
+
+
+
+ div > footer  {
+  margin: 0 ;
+  margin-top: auto;
+  display: flex;
+  background-color: var(--darkGrey);
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  height: 100px;
+  
+  
+  
+  
+}
+ footer img{
+  height: 100%;
+}
+footer p, footer a{
+  color: var(--lightGrey);
+}
+footer p{
+  min-width: 300px;
+  font-size: 0.85em;
+}
+
+
+#carousel-main {
+  height: 90vh;
+    max-height: 766px;
+    width: 57.3em;
+    max-width: 1366px;
+  }
+.carousel-inner {
+    max-height: 766px;
+    max-width: 1366px;
+    overflow: hidden;
+  }
+  .carousel-item {
+    overflow: hidden;
+    max-height: 766px;
+  }
+  .carousel-inner .active img {
+    height: 90vh;
+    max-height: 766px;
+    position: relative;
+    max-width: 1366px;
+    object-fit: cover;
+    min-height: 500px;
+  }
+  
+  .left-carousel > p,.right-carousel > p {
+    font-style: italic;
+    color:gray;
+    
+  } 
+  
+ 
+  #promocionais {
+    display: flex;
+    color: rgb(177, 177, 177);
+    width: 10vw;
+    gap: 128px;
+    max-width: 1980px;
+    height: fit-content;
+    
+  }
+  #promocionais > article {
+    background-color: #ff5d5d;
+    width: 220px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid rgb(177, 177, 177);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+  
+  #promocionais .title {
+    font-size: 1.8em;
+    z-index: 2;
+  }
+  
+  #promocionais > article > .front-promocionais > p {
+    position: absolute;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+  }
+  #promocionais > article:hover .front-promocionais, #promocionais > article.active .front-promocionais {
+    background-color: #ffffff8a!important;
+    color: #8b2c2c;
+    border: 0!important;
+    transition: color 1s;
+  }
+  #promocionais > article:hover  p, #promocionais > article.active  p {
+    opacity: 1!important;
+    position: relative!important;
+    transition: opacity 1s;
+  }
+  .front-promocionais {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 20px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+  }
+  .background-promocionais {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    z-index:0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: center center;
+    filter: brightness(.5) grayscale(1);
+  }
+  #promocionais> article:hover > .background-promocionais, article.active > .background-promocionais {
+    display: block!important;
+}
+#dia-especial {
+  background-image: url(../imagens/balao.jpg);
+}
+#indique-amigo {
+  background-image: url(../imagens/amigos.jpg);
+}
+#recompensas-exclusivas {
+  background-image: url(../imagens/barman.jpg);
+} 
+
+#section-2 {
+  position: relative;
+}
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+@media (max-width: 1040px)  {
+  .utensilios{
+    display: none;
+  }
+}
+@media (min-width: 801px) {
+  .carousel-inner .left-carousel {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 800px!important;
+    padding-right: 200px ;
+    width: fit-content;
+    font-size: 1.8em;
+  }
+}

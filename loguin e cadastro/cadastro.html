@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+    <link rel="shortcut icon" href="../imagens/caveira.jpg" type="image/x-icon">
+    <title>Cadastro | Barbearia </title>
+</head>
+<body>
+   
+  <header id="cima">
+    <img id="logo" src="./imagens/logo-removebg-preview (1).png" alt="logo da Barbearia ">
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../produtos.html">Produtos</a></li>
+        <li><a href="./login.html" id="cadastro">Login</a></li>
+        <li><a href="../comentarios.html">Comentarios</a></li>
+        <li> <a href="../funcionarios.html">Funcionarios</a><a href="#"></a></li>
+        <li>  <a href="" id="sair">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<main>
+    <main>
+        <form id="cadastrar">
+            <div class="label-input">
+                <label for="username-cadastro">Nome</label> 
+                <input type="text" id="username-cadastro" placeholder="Jorge da Silva" maxlength="50"required>
+            </div>
+            <div class="label-input">
+              <label for="email">email</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="label-input">
+                <label for="passwordCadastro">Senha</label>
+                <input type="password" name="passwordCadastro" id="passwordCadastro" maxlength="16" required>
+            </div>
+            <div class="label-input">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" required>
+            </div>
+            <div id="endereco">
+                <div class="label-input">
+                    <label for="CEP">CEP</label>
+                    <input type="text" name="CEP" id="CEP" required>
+                </div>
+                <div class="label-input">
+                    <label for="logradouro">logradouro</label>
+                    <input type="text" name="logradouro" id="logradouro" required>
+                </div>
+                <div class="label-input">
+                    <label for="numero_casa">Numero</label>
+                    <input type="text" name="numero_casa" id="numero_casa" required>
+                </div>
+            </div>
+            <div class="label-input">
+                <label for="data_nascimento">Data de Nascimento</label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+            </div>
+            
+            <button id="enviar_cadastro">Cadastrar</button>
+            <a href="login.html">Já tem uma conta? clique aqui</a>
+        </form>
+    </main>
+
+    <script src="cadastro.js"></script>
+    <script src="../menuMobile.js"></script>
+            
+    <footer>
+        <img src="../imagens/logo-removebg-preview (1).png" alt="Logo da Barbearia ">
+        <p>&copy; Desenvolvido no curso de HTML e CSS3 <a href=""></a>,</p>
+      </footer>
+
+      <script src="cadastro.js"></script>
+</body>
+</html>
